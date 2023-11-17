@@ -1,2 +1,3 @@
 # web-development-1
-faaltu project
+project1
+
