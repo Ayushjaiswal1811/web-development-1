@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, Shruti</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            max-width: 90%;
+            width: 400px;
+        }
+        h1 {
+            color: #ff4b5c;
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+        button {
+            background-color: #ff4b5c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #e63946;
+        }
+        .hidden {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Really Sorry, Shruti! 💔</h1>
+        <p>I never meant to upset you. You are very special to me, and I truly regret my actions. 
+           I hope you can forgive me and give me another chance to be your friend. 🙏</p>
+        <button onclick="showMessage()">Forgive Me?</button>
+        <p id="response" class="hidden">Yay! Thank you for forgiving me! ❤️😊</p>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById('response').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
